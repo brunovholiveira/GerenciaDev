@@ -1,0 +1,15 @@
+C:\Projetos\HeldeSolution\GerenciaDev\src\GDev.Data\bin\Debug\netcoreapp3.1\GDev.Data.deps.json
+C:\Projetos\HeldeSolution\GerenciaDev\src\GDev.Data\bin\Debug\netcoreapp3.1\GDev.Data.runtimeconfig.json
+C:\Projetos\HeldeSolution\GerenciaDev\src\GDev.Data\bin\Debug\netcoreapp3.1\GDev.Data.runtimeconfig.dev.json
+C:\Projetos\HeldeSolution\GerenciaDev\src\GDev.Data\bin\Debug\netcoreapp3.1\GDev.Data.dll
+C:\Projetos\HeldeSolution\GerenciaDev\src\GDev.Data\bin\Debug\netcoreapp3.1\GDev.Data.pdb
+C:\Projetos\HeldeSolution\GerenciaDev\src\GDev.Data\bin\Debug\netcoreapp3.1\GDev.Business.dll
+C:\Projetos\HeldeSolution\GerenciaDev\src\GDev.Data\bin\Debug\netcoreapp3.1\GDev.Business.pdb
+C:\Projetos\HeldeSolution\GerenciaDev\src\GDev.Data\obj\Debug\netcoreapp3.1\GDev.Data.csprojAssemblyReference.cache
+C:\Projetos\HeldeSolution\GerenciaDev\src\GDev.Data\obj\Debug\netcoreapp3.1\GDev.Data.AssemblyInfoInputs.cache
+C:\Projetos\HeldeSolution\GerenciaDev\src\GDev.Data\obj\Debug\netcoreapp3.1\GDev.Data.AssemblyInfo.cs
+C:\Projetos\HeldeSolution\GerenciaDev\src\GDev.Data\obj\Debug\netcoreapp3.1\GDev.Data.csproj.CoreCompileInputs.cache
+C:\Projetos\HeldeSolution\GerenciaDev\src\GDev.Data\obj\Debug\netcoreapp3.1\GDev.Data.csproj.CopyComplete
+C:\Projetos\HeldeSolution\GerenciaDev\src\GDev.Data\obj\Debug\netcoreapp3.1\GDev.Data.dll
+C:\Projetos\HeldeSolution\GerenciaDev\src\GDev.Data\obj\Debug\netcoreapp3.1\GDev.Data.pdb
+C:\Projetos\HeldeSolution\GerenciaDev\src\GDev.Data\obj\Debug\netcoreapp3.1\GDev.Data.genruntimeconfig.cache

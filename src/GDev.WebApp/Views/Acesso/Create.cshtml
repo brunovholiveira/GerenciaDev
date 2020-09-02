@@ -1,0 +1,50 @@
+﻿@model GDev.WebApp.ViewModels.AcessoViewModel
+
+@{
+    ViewData["Title"] = "Novo Acesso";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-10">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Url" class="control-label"></label>
+                <input asp-for="Url" class="form-control" />
+                <span asp-validation-for="Url" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Token" class="control-label"></label>
+                <input asp-for="Token" class="form-control" />
+                <span asp-validation-for="Token" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ModuloId" class="control-label"></label>
+                <select asp-for="ModuloId" class="form-control" asp-items="@(new SelectList(Model.Modulos, "Id", "Descricao"))">
+                    <option></option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="ClienteId" class="control-label"></label>
+                <select asp-for="ClienteId" class="form-control" asp-items="@(new SelectList(Model.Clientes, "Id", "RazaoSocial"))">
+                    <option></option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Criado em: @DateTime.Now.ToString()</label>
+                <input type="hidden" asp-for="DiaCadastro" class="form-control" value="@DateTime.Now" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Gravar" class="btn btn-primary" />
+                <a class="btn btn-secondary" asp-action="Index">Voltar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,41 @@
+﻿@model GDev.WebApp.ViewModels.ClienteViewModel
+
+@{
+    ViewData["Title"] = "Detalhes do Cliente";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.RazaoSocial)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.RazaoSocial)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DiaCadastro)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DiaCadastro)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DiaAlteracao)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DiaAlteracao)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-info" asp-action="Edit" asp-route-id="@Model.Id">Alterar</a>
+    <a class="btn btn-secondary" asp-action="Index">Voltar</a>
+</div>
+
+<hr />
+<h4>Acessos</h4>
+<div>
+    <partial name="../Acesso/_Acessos" model="@Model.Acessos" />
+</div>

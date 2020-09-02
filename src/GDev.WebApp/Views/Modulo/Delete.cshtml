@@ -1,0 +1,39 @@
+﻿@model GDev.WebApp.ViewModels.ModuloViewModel
+
+@{
+    ViewData["Title"] = "Excluir " + Model.Descricao;
+}
+
+<h4 style="padding-top: 50px">@ViewData["Title"] </h4>
+
+<h5>Você tem certeza disso?</h5>
+
+<div>    
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DiaCadastro)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DiaCadastro)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DiaAlteracao)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DiaAlteracao)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Excluir" class="btn btn-danger" />
+        <a class="btn btn-secondary" href="javascript:window.history.back();">Voltar</a>
+    </form>
+</div>
