@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GDev.Business.Interfaces
 {
-    public interface IModuloService
+    public interface IModuloService : IDisposable
     {
         Task Adicionar(Modulo modulo);
         Task Atualizar(Modulo modulo);

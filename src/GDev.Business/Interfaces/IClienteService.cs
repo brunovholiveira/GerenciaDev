@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GDev.Business.Interfaces
 {
-    public interface IClienteService
+    public interface IClienteService : IDisposable
     {
         Task Adicionar(Cliente cliente);
         Task Atualizar(Cliente cliente);

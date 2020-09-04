@@ -6,3 +6,12 @@ C:\Projetos\HeldeSolution\GerenciaDev\src\GDev.Business\obj\Debug\netcoreapp3.1\
 C:\Projetos\HeldeSolution\GerenciaDev\src\GDev.Business\obj\Debug\netcoreapp3.1\GDev.Business.AssemblyInfo.cs
 C:\Projetos\HeldeSolution\GerenciaDev\src\GDev.Business\obj\Debug\netcoreapp3.1\GDev.Business.dll
 C:\Projetos\HeldeSolution\GerenciaDev\src\GDev.Business\obj\Debug\netcoreapp3.1\GDev.Business.pdb
+C:\checkout\GerenciaDev\src\GDev.Business\bin\Debug\netcoreapp3.1\GDev.Business.deps.json
+C:\checkout\GerenciaDev\src\GDev.Business\bin\Debug\netcoreapp3.1\GDev.Business.dll
+C:\checkout\GerenciaDev\src\GDev.Business\bin\Debug\netcoreapp3.1\GDev.Business.pdb
+C:\checkout\GerenciaDev\src\GDev.Business\obj\Debug\netcoreapp3.1\GDev.Business.csprojAssemblyReference.cache
+C:\checkout\GerenciaDev\src\GDev.Business\obj\Debug\netcoreapp3.1\GDev.Business.csproj.CoreCompileInputs.cache
+C:\checkout\GerenciaDev\src\GDev.Business\obj\Debug\netcoreapp3.1\GDev.Business.AssemblyInfoInputs.cache
+C:\checkout\GerenciaDev\src\GDev.Business\obj\Debug\netcoreapp3.1\GDev.Business.AssemblyInfo.cs
+C:\checkout\GerenciaDev\src\GDev.Business\obj\Debug\netcoreapp3.1\GDev.Business.dll
+C:\checkout\GerenciaDev\src\GDev.Business\obj\Debug\netcoreapp3.1\GDev.Business.pdb

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\HeldeSolution\\GerenciaDev\\src\\GDev.WebApp\\GDev.WebApp.csproj": {}
+    "C:\\checkout\\GerenciaDev\\src\\GDev.WebApp\\GDev.WebApp.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\HeldeSolution\\GerenciaDev\\src\\GDev.Business\\GDev.Business.csproj": {
+    "C:\\checkout\\GerenciaDev\\src\\GDev.Business\\GDev.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\HeldeSolution\\GerenciaDev\\src\\GDev.Business\\GDev.Business.csproj",
+        "projectUniqueName": "C:\\checkout\\GerenciaDev\\src\\GDev.Business\\GDev.Business.csproj",
         "projectName": "GDev.Business",
-        "projectPath": "C:\\Projetos\\HeldeSolution\\GerenciaDev\\src\\GDev.Business\\GDev.Business.csproj",
-        "packagesPath": "C:\\Users\\bhvon\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\HeldeSolution\\GerenciaDev\\src\\GDev.Business\\obj\\",
+        "projectPath": "C:\\checkout\\GerenciaDev\\src\\GDev.Business\\GDev.Business.csproj",
+        "packagesPath": "C:\\Users\\Bruno Von Helde\\.nuget\\packages\\",
+        "outputPath": "C:\\checkout\\GerenciaDev\\src\\GDev.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\bhvon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bruno Von Helde\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,24 +61,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Projetos\\HeldeSolution\\GerenciaDev\\src\\GDev.Data\\GDev.Data.csproj": {
+    "C:\\checkout\\GerenciaDev\\src\\GDev.Data\\GDev.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\HeldeSolution\\GerenciaDev\\src\\GDev.Data\\GDev.Data.csproj",
+        "projectUniqueName": "C:\\checkout\\GerenciaDev\\src\\GDev.Data\\GDev.Data.csproj",
         "projectName": "GDev.Data",
-        "projectPath": "C:\\Projetos\\HeldeSolution\\GerenciaDev\\src\\GDev.Data\\GDev.Data.csproj",
-        "packagesPath": "C:\\Users\\bhvon\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\HeldeSolution\\GerenciaDev\\src\\GDev.Data\\obj\\",
+        "projectPath": "C:\\checkout\\GerenciaDev\\src\\GDev.Data\\GDev.Data.csproj",
+        "packagesPath": "C:\\Users\\Bruno Von Helde\\.nuget\\packages\\",
+        "outputPath": "C:\\checkout\\GerenciaDev\\src\\GDev.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\bhvon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bruno Von Helde\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -91,8 +91,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Projetos\\HeldeSolution\\GerenciaDev\\src\\GDev.Business\\GDev.Business.csproj": {
-                "projectPath": "C:\\Projetos\\HeldeSolution\\GerenciaDev\\src\\GDev.Business\\GDev.Business.csproj"
+              "C:\\checkout\\GerenciaDev\\src\\GDev.Business\\GDev.Business.csproj": {
+                "projectPath": "C:\\checkout\\GerenciaDev\\src\\GDev.Business\\GDev.Business.csproj"
               }
             }
           }
@@ -140,24 +140,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Projetos\\HeldeSolution\\GerenciaDev\\src\\GDev.WebApp\\GDev.WebApp.csproj": {
+    "C:\\checkout\\GerenciaDev\\src\\GDev.WebApp\\GDev.WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\HeldeSolution\\GerenciaDev\\src\\GDev.WebApp\\GDev.WebApp.csproj",
+        "projectUniqueName": "C:\\checkout\\GerenciaDev\\src\\GDev.WebApp\\GDev.WebApp.csproj",
         "projectName": "GDev.WebApp",
-        "projectPath": "C:\\Projetos\\HeldeSolution\\GerenciaDev\\src\\GDev.WebApp\\GDev.WebApp.csproj",
-        "packagesPath": "C:\\Users\\bhvon\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\HeldeSolution\\GerenciaDev\\src\\GDev.WebApp\\obj\\",
+        "projectPath": "C:\\checkout\\GerenciaDev\\src\\GDev.WebApp\\GDev.WebApp.csproj",
+        "packagesPath": "C:\\Users\\Bruno Von Helde\\.nuget\\packages\\",
+        "outputPath": "C:\\checkout\\GerenciaDev\\src\\GDev.WebApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\bhvon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bruno Von Helde\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -170,8 +170,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Projetos\\HeldeSolution\\GerenciaDev\\src\\GDev.Data\\GDev.Data.csproj": {
-                "projectPath": "C:\\Projetos\\HeldeSolution\\GerenciaDev\\src\\GDev.Data\\GDev.Data.csproj"
+              "C:\\checkout\\GerenciaDev\\src\\GDev.Data\\GDev.Data.csproj": {
+                "projectPath": "C:\\checkout\\GerenciaDev\\src\\GDev.Data\\GDev.Data.csproj"
               }
             }
           }
@@ -248,7 +248,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

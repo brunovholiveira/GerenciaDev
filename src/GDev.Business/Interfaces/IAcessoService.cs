@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace GDev.Business.Interfaces
 {
-    public interface IAcessoService
+    public interface IAcessoService : IDisposable
     {
         Task Adicionar(Acesso acesso);
         Task Atualizar(Acesso acesso);
