@@ -10,7 +10,7 @@ namespace GDev.Business.Model.Validations
         public ModuloValidation()
         {
             RuleFor(m => m.Descricao)
-                .NotEmpty().WithMessage("O campo {PropertyNname} não pode ser vazio.")
+                .NotEmpty().WithMessage("O campo {PropertyName} não pode ser vazio.")
                 .Length(2, 100).WithMessage("O campo {PropetyName} tem que ter no mínimo {MinLength} e no máximo {MaxLength}");
         }
     }

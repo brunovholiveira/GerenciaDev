@@ -9,15 +9,20 @@ using GDev.Business.Model;
 
 namespace GDev.WebApp.Controllers
 {
-    public class ModuloController : Controller
+    public class ModuloController : BaseController
     {
-        private readonly IModuloRepository _moduloRepository;        
-        private readonly IMapper _mapper;
+        private readonly IModuloRepository _moduloRepository;
+        private readonly IModuloService _moduloService;
+        private readonly IMapper _mapper;        
 
-        public ModuloController(IModuloRepository moduloRepository, IMapper mapper)
+        public ModuloController(IModuloRepository moduloRepository, 
+                                IModuloService moduloService,
+                                INotificador notificador,
+                                IMapper mapper) : base(notificador)
         {
             _moduloRepository = moduloRepository;            
             _mapper = mapper;
+            _moduloService = moduloService;
         }
 
         [Route("lista-de-modulos")]
@@ -51,10 +56,12 @@ namespace GDev.WebApp.Controllers
 
             var modulo = _mapper.Map<Modulo>(moduloViewModel);
             
-            modulo.DiaCadastro = DateTime.Now;
+            modulo.DiaCadastro = DateTime.Now;            
 
-            await _moduloRepository.Adicionar(modulo);
-               
+            await _moduloService.Adicionar(modulo);
+
+            if (!OperacaoValida()) return View(moduloViewModel);
+
             return RedirectToAction(nameof(Index));
         }
 
@@ -80,9 +87,11 @@ namespace GDev.WebApp.Controllers
             
             if (!ModelState.IsValid)  return View(moduloViewModel);
 
-            moduloViewModel.DiaAlteracao = DateTime.Now;
+            moduloViewModel.DiaAlteracao = DateTime.Now;            
 
-            await _moduloRepository.Alterar(_mapper.Map<Modulo>(moduloViewModel));
+            await _moduloService.Atualizar(_mapper.Map<Modulo>(moduloViewModel));
+
+            if (!OperacaoValida()) return View(moduloViewModel);
 
             return RedirectToAction(nameof(Index));
         }
@@ -105,7 +114,13 @@ namespace GDev.WebApp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
-            await _moduloRepository.Excluir((id));
+            var moduloViewModel = _mapper.Map<ModuloViewModel>(await _moduloRepository.BuscarPorId(id)); 
+
+            await _moduloService.Remover(id);
+
+            if (!OperacaoValida()) return View(moduloViewModel);
+
+            TempData["Sucesso"] = "Módulo excluido com sucesso.";
 
             return RedirectToAction(nameof(Index));
         }

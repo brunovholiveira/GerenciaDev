@@ -11,7 +11,7 @@ namespace GDev.Business.Services
     {
         private readonly IModuloRepository _repository;
 
-        public ModuloService(IModuloRepository repository)
+        public ModuloService(IModuloRepository repository, INotificador notificador) : base(notificador)
         {
             _repository = repository;
         }

@@ -11,7 +11,7 @@ namespace GDev.Business.Services
     {
         private readonly IClienteRepository _repository;
 
-        public ClienteService(IClienteRepository repository)
+        public ClienteService(IClienteRepository repository, INotificador notificador) : base(notificador)
         {
             _repository = repository;
         }

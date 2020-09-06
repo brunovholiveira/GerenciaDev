@@ -9,14 +9,19 @@ using GDev.Business.Model;
 
 namespace GDev.WebApp.Controllers
 {
-    public class ClienteController : Controller
+    public class ClienteController : BaseController
     {
         private readonly IClienteRepository _repository;
+        private readonly IClienteService _clienteService;
         private readonly IMapper _mapper;
 
-        public ClienteController(IClienteRepository repository, IMapper mapper)
+        public ClienteController(IClienteRepository repository, 
+                                 IClienteService clienteService,
+                                 INotificador notificador,
+                                 IMapper mapper) : base(notificador)
         {
             _repository = repository;
+            _clienteService = clienteService;
             _mapper = mapper;
         }
 
@@ -49,7 +54,9 @@ namespace GDev.WebApp.Controllers
         {
             if (!ModelState.IsValid) return View(clienteViewModel);
 
-            await _repository.Adicionar(_mapper.Map<Cliente>(clienteViewModel));
+            await _clienteService.Adicionar(_mapper.Map<Cliente>(clienteViewModel));
+
+            if (!OperacaoValida()) return View(clienteViewModel);
             
             return RedirectToAction(nameof(Index));                     
         }
@@ -73,8 +80,10 @@ namespace GDev.WebApp.Controllers
 
             if (!ModelState.IsValid) return View(clienteViewModel);
 
-            await _repository.Alterar(_mapper.Map<Cliente>(clienteViewModel));
-                
+            await _clienteService.Atualizar(_mapper.Map<Cliente>(clienteViewModel));
+
+            if (!OperacaoValida()) return View(clienteViewModel);
+
             return RedirectToAction(nameof(Index));
         }
 
@@ -92,8 +101,14 @@ namespace GDev.WebApp.Controllers
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
-        {            
-            await _repository.Excluir(id);
+        {
+            var clienteViewModel = _mapper.Map<ClienteViewModel>(await _repository.BuscarPorId(id));
+
+            await _clienteService.Remover(id);
+
+            if (!OperacaoValida()) return View(clienteViewModel);
+
+            TempData["Sucesso"] = "Cliente excluido com sucesso.";
 
             return RedirectToAction(nameof(Index));
         }       

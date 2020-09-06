@@ -31,8 +31,4 @@
     <ProjectReference Include="..\GDev.Data\GDev.Data.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="NewFolder\" />
-  </ItemGroup>
-
 </Project>

@@ -3,9 +3,7 @@ using FluentValidation.Results;
 using GDev.Business.Interfaces;
 using GDev.Business.Model;
 using GDev.Business.Notificacoes;
-using System;
-using System.Collections.Generic;
-using System.Text;
+
 
 namespace GDev.Business.Services
 {

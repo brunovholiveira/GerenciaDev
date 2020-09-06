@@ -15,3 +15,4 @@ C:\checkout\GerenciaDev\src\GDev.Business\obj\Debug\netcoreapp3.1\GDev.Business.
 C:\checkout\GerenciaDev\src\GDev.Business\obj\Debug\netcoreapp3.1\GDev.Business.AssemblyInfo.cs
 C:\checkout\GerenciaDev\src\GDev.Business\obj\Debug\netcoreapp3.1\GDev.Business.dll
 C:\checkout\GerenciaDev\src\GDev.Business\obj\Debug\netcoreapp3.1\GDev.Business.pdb
+C:\Projetos\HeldeSolution\GerenciaDev\src\GDev.Business\obj\Debug\netcoreapp3.1\GDev.Business.csproj.CoreCompileInputs.cache

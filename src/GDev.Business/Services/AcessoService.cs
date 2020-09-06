@@ -10,7 +10,7 @@ namespace GDev.Business.Services
     {
         private readonly IAcessoRespository _repository;
 
-        public AcessoService(IAcessoRespository respository)
+        public AcessoService(IAcessoRespository respository, INotificador notificador) : base(notificador)
         {
             _repository = respository;
         }

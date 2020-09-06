@@ -9,18 +9,25 @@ using GDev.Business.Model;
 
 namespace GDev.WebApp.Controllers
 {
-    public class AcessoController : Controller
+    public class AcessoController : BaseController
     {
         private readonly IAcessoRespository _repository;
         private readonly IClienteRepository _repositoryCliente;
         private readonly IModuloRepository _repositoryModulo;
+        private readonly IAcessoService _acessoService;
         private readonly IMapper _mapper;
                
-        public AcessoController(IAcessoRespository repository, IClienteRepository repositoryCliente, IModuloRepository repositoryModulo, IMapper mapper)
+        public AcessoController(IAcessoRespository repository, 
+                                IClienteRepository repositoryCliente, 
+                                IModuloRepository repositoryModulo,
+                                IAcessoService acessoService,
+                                INotificador notificador,
+                                IMapper mapper) : base(notificador)
         {
             _repository = repository;
             _repositoryCliente = repositoryCliente;
             _repositoryModulo = repositoryModulo;
+            _acessoService = acessoService;
             _mapper = mapper;
         }
 
@@ -57,7 +64,9 @@ namespace GDev.WebApp.Controllers
 
             if (!ModelState.IsValid) return View(acessoViewModel);
 
-            await _repository.Adicionar(_mapper.Map<Acesso>(acessoViewModel));
+            await _acessoService.Adicionar(_mapper.Map<Acesso>(acessoViewModel));
+
+            if (!OperacaoValida()) return View(acessoViewModel);
             
             return RedirectToAction(nameof(Index));           
         }
@@ -83,8 +92,10 @@ namespace GDev.WebApp.Controllers
 
             if (!ModelState.IsValid) return View(acessoViewModel);
 
-            await _repository.Alterar(_mapper.Map<Acesso>(acessoViewModel));
-                
+            await _acessoService.Atualizar(_mapper.Map<Acesso>(acessoViewModel));
+
+            if (!OperacaoValida()) return View(acessoViewModel);
+
             return RedirectToAction(nameof(Index));                        
         }
 
@@ -106,8 +117,14 @@ namespace GDev.WebApp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
-            await _repository.Excluir(id);
-          
+            var acessoViewModel = _mapper.Map<AcessoViewModel>(await _repository.ObterModuloClienteDoAcesso(id));
+
+            await _acessoService.Remover(id);
+
+            if (!OperacaoValida()) return View(acessoViewModel);
+
+            TempData["Sucesso"] = "Acesso excluido com sucesso";
+
             return RedirectToAction(nameof(Index));
         }       
 

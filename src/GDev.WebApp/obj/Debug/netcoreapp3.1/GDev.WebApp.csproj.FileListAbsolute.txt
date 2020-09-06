@@ -947,3 +947,4 @@ C:\checkout\GerenciaDev\src\GDev.WebApp\obj\Debug\netcoreapp3.1\staticwebassets\
 C:\checkout\GerenciaDev\src\GDev.WebApp\obj\Debug\netcoreapp3.1\GDev.WebApp.dll
 C:\checkout\GerenciaDev\src\GDev.WebApp\obj\Debug\netcoreapp3.1\GDev.WebApp.pdb
 C:\checkout\GerenciaDev\src\GDev.WebApp\obj\Debug\netcoreapp3.1\GDev.WebApp.genruntimeconfig.cache
+C:\Projetos\HeldeSolution\GerenciaDev\src\GDev.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Summary\Default.cshtml.g.cs
